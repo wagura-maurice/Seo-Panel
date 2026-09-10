@@ -15,6 +15,7 @@
 | [03-deployment-plan.md](03-deployment-plan.md)             | Step-by-step deployment execution plan (15 steps)         |
 | [04-security-networking.md](04-security-networking.md)     | TCP/UDP ports, UFW commands, SSL, application security, FTP credentials |
 | [05-free-opensource-setup.md](05-free-opensource-setup.md) | 100% free/open-source SEO task configuration: tools, plugins, API keys, settings |
+| [06-next-steps.md](06-next-steps.md)                     | Post-deployment action items: security, API keys, websites, cron, backups, maintenance |
 | [deploy.sh](deploy.sh)                                     | Automated bash deployment script                          |
 
 ---
