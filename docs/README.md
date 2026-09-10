@@ -14,6 +14,7 @@
 | [02-dependency-analysis.md](02-dependency-analysis.md)     | Project type, PHP extensions, php.ini mods, Composer/Node analysis, Nginx requirements |
 | [03-deployment-plan.md](03-deployment-plan.md)             | Step-by-step deployment execution plan (15 steps)         |
 | [04-security-networking.md](04-security-networking.md)     | TCP/UDP ports, UFW commands, SSL, application security, FTP credentials |
+| [05-free-opensource-setup.md](05-free-opensource-setup.md) | 100% free/open-source SEO task configuration: tools, plugins, API keys, settings |
 | [deploy.sh](deploy.sh)                                     | Automated bash deployment script                          |
 
 ---
