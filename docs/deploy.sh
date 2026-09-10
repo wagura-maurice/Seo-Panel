@@ -448,8 +448,20 @@ set_permissions() {
         return
     fi
 
+    # aaPanel protects .user.ini with the immutable (i) chattr flag.
+    # Temporarily remove it so chown can succeed, then restore it.
+    local user_ini="$SITE_ROOT/.user.ini"
+    if [[ -f "$user_ini" ]]; then
+        chattr -i "$user_ini" 2>/dev/null || true
+    fi
+
     # Set ownership to web user
     chown -R "$WEB_USER":"$WEB_USER" "$SITE_ROOT"
+
+    # Restore immutable flag on .user.ini to preserve aaPanel protection
+    if [[ -f "$user_ini" ]]; then
+        chattr +i "$user_ini" 2>/dev/null || true
+    fi
 
     # Directories: 755
     find "$SITE_ROOT" -type d -exec chmod 755 {} \;
